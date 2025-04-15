@@ -44,6 +44,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxtjs/i18n',
     'shadcn-nuxt',
+    '@nuxtjs/storybook',
   ],
 
   css: ['~/assets/css/tailwind.css'],
