@@ -9,8 +9,10 @@ import {
 } from 'lucide-vue-next';
 
 import type { SidebarProps } from '@/components/ui/sidebar';
+import { useSidebar } from '@/components/ui/sidebar';
 
 const props = defineProps<SidebarProps>();
+const { setOpenMobile } = useSidebar();
 
 // This is sample data.
 const data = {
@@ -95,7 +97,12 @@ const data = {
               :is-active="item?.isActive"
             >
               <component :is="item.icon" v-if="item.icon" />
-              <span class="font-medium">{{ item.title }}</span>
+              <NuxtLink
+                @click="setOpenMobile(false)"
+                :to="item.url"
+                class="font-medium"
+                >{{ item.title }}</NuxtLink
+              >
             </SidebarMenuButton>
 
             <SidebarMenuSub v-if="item.items?.length">
