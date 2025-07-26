@@ -5,7 +5,7 @@
     <SidebarInset>
       <header class="flex h-16 shrink-0 items-center gap-2 border-b">
         <div class="flex items-center gap-2 px-3">
-          <SidebarTrigger />
+          <SidebarTrigger class="cursor-pointer" />
           <Separator orientation="vertical" class="mr-2 h-4" />
 
           <!-- <Breadcrumb
@@ -31,7 +31,7 @@
 
       <NuxtPage />
 
-      <FeedbackButton />
+      <FeedbackDialog />
     </SidebarInset>
   </SidebarProvider>
 </template>

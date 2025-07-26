@@ -3,9 +3,9 @@ import {
   Calendar,
   GalleryVerticalEnd,
   Home,
-  PersonStanding,
   Workflow,
   ChartColumnIncreasing,
+  Users,
 } from 'lucide-vue-next';
 
 import type { SidebarProps } from '@/components/ui/sidebar';
@@ -29,7 +29,7 @@ const data = {
     {
       title: 'Pazienti',
       url: '/dashboard/pazienti',
-      icon: PersonStanding,
+      icon: Users,
     },
     {
       title: 'Sedute',
